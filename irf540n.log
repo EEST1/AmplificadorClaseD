@@ -1,0 +1,4 @@
+Stray ".ends" card: .ends irf540n
+Circuit: .SUBCKT irf540n 1 2 3
+
+Fatal Error: No analysis request found.
