@@ -361,7 +361,7 @@ L Device:D_ALT D2
 U 1 1 6152B6B9
 P 4000 3800
 F 0 "D2" H 4000 3583 50  0000 C CNN
-F 1 "D_ALT" H 4000 3674 50  0000 C CNN
+F 1 "1n4148" H 4000 3674 50  0000 C CNN
 F 2 "" H 4000 3800 50  0001 C CNN
 F 3 "~" H 4000 3800 50  0001 C CNN
 	1    4000 3800
@@ -405,13 +405,11 @@ H_Side_Mosfet
 Text GLabel 3100 8800 0    50   Input ~ 0
 L_Side_Mosfet
 Wire Wire Line
-	3100 7950 3300 7950
-Wire Wire Line
-	3100 8800 3300 8800
+	3100 7950 3250 7950
 Wire Wire Line
 	3600 8600 3600 8350
 Wire Wire Line
-	3600 8350 3100 8350
+	3600 8350 3250 8350
 Connection ~ 3600 8350
 Wire Wire Line
 	3600 8350 3600 8150
@@ -622,7 +620,7 @@ F 3 "" H 5150 9300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3600 9300 3600 9000
+	3600 9300 3600 9200
 $Comp
 L power:VPP #PWR0111
 U 1 1 615FDB32
@@ -835,4 +833,52 @@ $EndComp
 Connection ~ 5200 2050
 Text Notes 3150 1800 0    50   ~ 0
 Audio + 2,5 V
+$Comp
+L Device:D_Zener_ALT D?
+U 1 1 61690AFA
+P 3250 8150
+F 0 "D?" V 3204 8229 50  0000 L CNN
+F 1 "D_Zener_ALT" V 3200 7550 50  0000 L CNN
+F 2 "" H 3250 8150 50  0001 C CNN
+F 3 "~" H 3250 8150 50  0001 C CNN
+	1    3250 8150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 8800 3250 8800
+$Comp
+L Device:D_Zener_ALT D?
+U 1 1 61692510
+P 3250 9000
+F 0 "D?" V 3204 9079 50  0000 L CNN
+F 1 "D_Zener_ALT" V 3200 8400 50  0000 L CNN
+F 2 "" H 3250 9000 50  0001 C CNN
+F 3 "~" H 3250 9000 50  0001 C CNN
+	1    3250 9000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3250 8000 3250 7950
+Connection ~ 3250 7950
+Wire Wire Line
+	3250 7950 3300 7950
+Wire Wire Line
+	3250 8300 3250 8350
+Connection ~ 3250 8350
+Wire Wire Line
+	3250 8350 3100 8350
+Wire Wire Line
+	3250 8850 3250 8800
+Connection ~ 3250 8800
+Wire Wire Line
+	3250 8800 3300 8800
+Wire Wire Line
+	3250 9150 3250 9200
+Wire Wire Line
+	3250 9200 3600 9200
+Connection ~ 3600 9200
+Wire Wire Line
+	3600 9200 3600 9000
+Text Notes 4750 900  0    50   ~ 0
+12VDC
 $EndSCHEMATC
