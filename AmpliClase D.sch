@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:AmpliClase D-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 8268 11693 portrait
@@ -33,7 +34,7 @@ F 1 "10uF" V 4786 3800 50  0000 C CNN
 F 2 "" H 4988 3650 50  0001 C CNN
 F 3 "~" H 4950 3800 50  0001 C CNN
 	1    4950 3800
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Transistor_FET:IRF540N Q1
@@ -115,11 +116,11 @@ L Device:CP C12
 U 1 1 614F1715
 P 5550 1350
 F 0 "C12" V 5295 1350 50  0000 C CNN
-F 1 "10uF 50V" V 5386 1350 50  0000 C CNN
+F 1 "10uF 50V" V 5750 1350 50  0000 C CNN
 F 2 "" H 5588 1200 50  0001 C CNN
 F 3 "~" H 5550 1350 50  0001 C CNN
 	1    5550 1350
-	-1   0    0    1   
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5100 2050 5200 2050
