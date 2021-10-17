@@ -879,6 +879,4 @@ Wire Wire Line
 Connection ~ 3600 9200
 Wire Wire Line
 	3600 9200 3600 9000
-Text Notes 4750 900  0    50   ~ 0
-12VDC
 $EndSCHEMATC
